@@ -1,1 +1,2 @@
-console.log(1111);
+console.log(222222);
+document.cookie = 'name=ngnice';
