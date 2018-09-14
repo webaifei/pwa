@@ -1,4 +1,4 @@
-const VERSION = 5;
+const VERSION = 6;
 var cacheName = 'shell-content'+VERSION;
 // 如果要添加到缓存中的资源列表中的一个 添加失败了的话 
 // 会导致整个缓存添加失败
