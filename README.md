@@ -7,13 +7,13 @@
 
 ### Why should you use PWA now?
 1. Reliable
-  1.1 使用manifest.json 将应用添加到主屏幕 增加用户粘性
-  1.2 利用service worker 实现离线应用
+  * 使用manifest.json 将应用添加到主屏幕 增加用户粘性
+  * 利用service worker 实现离线应用
 2. Fast
-  1.1 利用service worker 缓存关键资源 让你的应用打开更快 提升用户体验 拒绝loading
+  * 利用service worker 缓存关键资源 让你的应用打开更快 提升用户体验 拒绝loading
 3. Engaging
-  以上两点
-  push api 消息推送
+  * 以上两点
+  * push api 消息推送
 
 ### How to use?
 
