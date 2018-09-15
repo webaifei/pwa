@@ -31,6 +31,14 @@ web永远绕不开的宿命：兼容性。
 
 ### How to use?
 
+定义你自己的manifest
+
+```
+{
+
+}
+```
+
 ### How to update your caches?
 
 1. 默认情况下，
