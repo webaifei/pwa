@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <img src="./assets/images/078513e9-5751-a466-0937-7a6dc7589149.png" alt="">
+  <form id="form">
+    <input type="text" class="text" />
+  </form>
+  <div id="res"></div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/a.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function (registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function (err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+</script>
+</html>

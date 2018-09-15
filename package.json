@@ -1,0 +1,28 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "pwa tutorial",
+  "main": "sw.js",
+  "scripts": {
+    "predeploy": "gitbook build",
+    "deploy": "node build/deploy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webaifei/pwa.git"
+  },
+  "keywords": [
+    "pwa",
+    "h5-vs-app"
+  ],
+  "author": "webaifei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webaifei/pwa/issues"
+  },
+  "homepage": "https://github.com/webaifei/pwa#readme",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}
