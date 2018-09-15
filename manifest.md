@@ -6,8 +6,8 @@
 
 ```
 {
-    "short_name": "AirHorner",
-    "name": "Kinlan's AirHorner of Infamy",
+    "short_name": "51NB",
+    "name": "51BN",
     "icons": [
       {
         "src": "launcher-icon-1x.png",
@@ -27,7 +27,6 @@
     ],
     "start_url": "index.html?launcher=true"
   }
-
 ```
 
 参考：  
