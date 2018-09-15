@@ -4,6 +4,6 @@
 
 
 参考：
-1. [google 教程] (
+1. [google 教程](
 https://developers.google.com/web/fundamentals/web-app-manifest
 )
