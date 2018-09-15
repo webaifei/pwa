@@ -2,7 +2,7 @@
 
 ### What is PWA?
 
-> PWA\(progress web app\)   
+> PWA\(progress web app\)  
 > 1. 渐进增强  
 > 2. 让你的web 应用 接近app的体验
 
@@ -18,6 +18,12 @@
 3. Engaging
    * 以上两点
    * push api 消息推送
+
+---
+
+web永远绕不开的宿命：兼容性。
+
+
 
 现实不理想，但是不能阻止我们探索^^。
 
