@@ -23,11 +23,11 @@
 
 web永远绕不开的宿命：兼容性。
 
-
+1. manifest 
+2. service worker
+3. push api
 
 现实不理想，但是不能阻止我们探索^^。
-
-
 
 ### How to use?
 
