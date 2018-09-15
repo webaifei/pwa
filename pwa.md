@@ -21,13 +21,18 @@
 
 ---
 
-web永远绕不开的宿命：兼容性。
+### web永远绕不开的宿命：兼容性。
 
 1. manifest 
-2. service worker
-3. push api
+   ![](/screenshot/web-app-manifets.png)
 
-现实不理想，但是不能阻止我们探索^^。
+2. service worker
+   ![](/screenshot/service-worker.png)
+
+3. push api
+   ![](/screenshot/push-api.png)
+
+### 现实不理想，但是不能阻止我们探索^^。
 
 ### How to use?
 
