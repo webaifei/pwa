@@ -6,27 +6,28 @@
 
 ```
 {
-    "short_name": "51NB",
-    "name": "51BN",
-    "icons": [
-      {
-        "src": "launcher-icon-1x.png",
-        "type": "image/png",
-        "sizes": "48x48"
-      },
-      {
-        "src": "launcher-icon-2x.png",
-        "type": "image/png",
-        "sizes": "96x96"
-      },
-      {
-        "src": "launcher-icon-4x.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      }
-    ],
-    "start_url": "index.html?launcher=true"
-  }
+  "short_name": "51NB-SHORT",
+  "name": "51NB",
+  "icons": [
+    {
+      "src": "./images/logo-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./images/logo-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./images/logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "index.html?launcher=true"
+}
 ```
 
 参考：  
