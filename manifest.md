@@ -30,6 +30,10 @@
 }
 ```
 
+注意点：
+
+1. display 属性不能缺少 否则不能添加到主屏幕
+
 参考：  
 1. [google 教程](https://developers.google.com/web/fundamentals/web-app-manifest
 )
