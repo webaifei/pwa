@@ -30,10 +30,12 @@
 }
 ```
 
-注意点：
+注意点：必须满足如下的条件才能添加添加到主屏幕
 
-1. display 属性不能缺少 否则不能添加到主屏幕
+1. 
+1. display 属性不能缺少 
 2. icon的尺寸必须符合大小
+3. 必须成功注册service-worder 
 
 参考：  
 1. [google 教程](https://developers.google.com/web/fundamentals/web-app-manifest
