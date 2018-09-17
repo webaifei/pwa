@@ -55,6 +55,7 @@ if ('serviceWorker' in navigator) {
 ```
 // 缓存版本
 var CACHE_NAME = 'my-site-cache-v1';
+// 缓存的资源
 var urlsToCache = [
   '/',
   '/styles/main.css',
