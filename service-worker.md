@@ -6,7 +6,7 @@
 
 使用service worker的前置条件
 
-1. 浏览器支持 service worker ， Promise， fetch，caches
+1. 浏览器支持 service worker ， Promise， fetch，caches等
 
 2. 
 
