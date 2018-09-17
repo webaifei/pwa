@@ -63,7 +63,7 @@ var urlsToCache = [
 ];
 //监听启动安装事件
 self.addEventListener('install', function(event) {
-  // install 成功
+  // install 成功 缓存资源
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
