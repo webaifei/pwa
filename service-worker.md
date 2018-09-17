@@ -19,11 +19,9 @@
 
 ## service worker声明周期
 
-  ![img](./screenshot/install.gif)
+![img](./screenshot/install.gif)
 
 ### install 安装服务线程
-
-
 
 > 在注册service woker成功之后 会启动 服务线程的安装
 
@@ -78,11 +76,8 @@ self.addEventListener('install', function(event) {
 });
 ```
 
-
-
-
-
 ### Activate 准备控制客户端
+
 ```
 // 监听激活事件
 self.addEventListener('activate', function(event) {
@@ -103,12 +98,9 @@ self.addEventListener('activate', function(event) {
   );
 });
 ```
+
 1. 默认情况下 首次注册service worker并安装成功之后到达activate状态 并不会控制当前的页面
-2. 如果你想改变这个默认行为，在激活后使用：clients.claim() 
-
-
-
-
+2. 如果你想改变这个默认行为，在激活后使用：clients.claim\(\) 
 
 
 
