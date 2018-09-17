@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>wep app manifest · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="h5-vs-app.html" />
+    <link rel="next" href="service-worker.html" />
     
+    
+    <link rel="prev" href="pwa.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -126,7 +128,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="manifest.html">
+        <li class="chapter active" data-level="1.4" data-path="manifest.html">
             
                 <a href="manifest.html">
             
@@ -182,7 +184,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >wep app manifest</a>
     </h1>
 </div>
 
@@ -197,8 +199,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="pwa">PWA</h1>
-<p>&#x4F7F;H5 &#x66F4;&#x63A5;&#x8FD1;&#x539F;&#x751F;APP.</p>
+                                <h2 id="&#x4F7F;&#x7528;web-app-manifest">&#x4F7F;&#x7528;web app manifest</h2>
+<blockquote>
+<p>&#x4F7F;&#x7528;manifest &#x5C06;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;</p>
+</blockquote>
+<h4 id="manifestjson">manifest.json</h4>
+<pre><code>{
+  &quot;short_name&quot;: &quot;51NB-SHORT&quot;,
+  &quot;name&quot;: &quot;51NB&quot;,
+  &quot;icons&quot;: [
+    {
+      &quot;src&quot;: &quot;./img/logo-48x48.png&quot;,
+      &quot;type&quot;: &quot;image/png&quot;,
+      &quot;sizes&quot;: &quot;48x48&quot;
+    },
+    {
+      &quot;src&quot;: &quot;./img/logo-96x96.png&quot;,
+      &quot;type&quot;: &quot;image/png&quot;,
+      &quot;sizes&quot;: &quot;96x96&quot;
+    },
+    {
+      &quot;src&quot;: &quot;./img/logo-192x192.png&quot;,
+      &quot;type&quot;: &quot;image/png&quot;,
+      &quot;sizes&quot;: &quot;192x192&quot;
+    }
+  ],
+  &quot;display&quot;: &quot;standalone&quot;,
+  &quot;start_url&quot;: &quot;index.html?launcher=true&quot;
+}
+</code></pre><p>&#x6CE8;&#x610F;&#x70B9;&#xFF1A;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x5982;&#x4E0B;&#x7684;&#x6761;&#x4EF6;&#x624D;&#x80FD;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;(&#x5728;&#x652F;&#x6301;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;)</p>
+<ol>
+<li>display &#x5C5E;&#x6027;&#x4E0D;&#x80FD;&#x7F3A;&#x5C11; </li>
+<li>icon&#x7684;&#x5C3A;&#x5BF8;&#x5FC5;&#x987B;&#x7B26;&#x5408;&#x5927;&#x5C0F;</li>
+<li>&#x5FC5;&#x987B;&#x6210;&#x529F;&#x6CE8;&#x518C;service-worder </li>
+</ol>
+<p>&#x53C2;&#x8003;&#xFF1A;  </p>
+<ol>
+<li><a href="https://developers.google.com/web/fundamentals/web-app-manifest" target="_blank">google &#x6559;&#x7A0B;</a></li>
+</ol>
 
                                 
                                 </section>
@@ -226,8 +264,12 @@
 
             
                 
+                <a href="pwa.html" class="navigation navigation-prev " aria-label="Previous page: PWA">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="h5-vs-app.html" class="navigation navigation-next navigation-unique" aria-label="Next page: H5-VS-APP">
+                
+                <a href="service-worker.html" class="navigation navigation-next " aria-label="Next page: service-worker">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -238,7 +280,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"H5-VS-APP","level":"1.2","depth":1,"path":"h5-vs-app.md","ref":"h5-vs-app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-09-15T04:50:12.306Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-17T14:20:43.963Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"wep app manifest","level":"1.4","depth":1,"next":{"title":"service-worker","level":"1.5","depth":1,"path":"service-worker.md","ref":"service-worker.md","articles":[]},"previous":{"title":"PWA","level":"1.3","depth":1,"path":"pwa.md","ref":"pwa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"manifest.md","mtime":"2018-09-17T12:53:20.314Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-17T14:20:43.963Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
