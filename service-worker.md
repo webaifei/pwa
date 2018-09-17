@@ -21,6 +21,8 @@
 
 ### install 安装服务线程
 
+
+
 > 在注册service woker成功之后 会启动 服务线程的安装
 
 在注册了service worker脚本之后
@@ -75,6 +77,10 @@ self.addEventListener('install', function(event) {
 ```
 
 ![img](./screenshot/install.gif)
+
+
+
+### Activate 
 
 
 
