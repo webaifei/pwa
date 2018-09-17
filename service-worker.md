@@ -61,9 +61,9 @@ var urlsToCache = [
   '/styles/main.css',
   '/script/main.js'
 ];
-
+//监听启动安装事件
 self.addEventListener('install', function(event) {
-  // Perform install steps
+  // install 成功
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
