@@ -8,6 +8,7 @@
 
 1. 浏览器支持 service worker ， Promise， fetch，caches等
 
-2. 
+2. 你的网站支持https
+
 
 
