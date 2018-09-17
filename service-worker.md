@@ -53,6 +53,7 @@ if ('serviceWorker' in navigator) {
 **非本域名下的资源：**
 
 ```
+// 缓存版本
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   '/',
