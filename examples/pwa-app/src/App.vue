@@ -1,27 +1,26 @@
 <template>
   <div id="app">
+      <van-nav-bar
+        title="标题"
+        left-text="返回"
+        right-text="list"
+        left-arrow
+        @click-right="onClickRight"
+        @click-left="onClickLeft"
+        />
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+export default {
+  methods: {
+    onClickRight() {
+      this.$router.push('/about');
+    },
+    onClickLeft() {
+      this.$router.back();
+    },
+  },
+};
+</script>
