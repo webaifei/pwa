@@ -52,6 +52,13 @@ if ('serviceWorker' in navigator) {
 
 **非本域名下的资源：**
 
+```
+self.addEventListener('install', function(event) {
+  // Perform install steps
+});
+
+```
+
 ![img](./screenshot/install.gif)
 
 
