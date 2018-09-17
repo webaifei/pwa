@@ -53,7 +53,7 @@ if ('serviceWorker' in navigator) {
 **非本域名下的资源：**
 
 
-![img](./screenshot/install.svg)
+
 
 
 
