@@ -6,5 +6,8 @@
 
 
 
+使用service worker的前置条件
+
+1. 
 
 
