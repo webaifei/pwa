@@ -81,6 +81,24 @@ self.addEventListener('install', function(event) {
 
 
 ### Activate 准备控制客户端
+```
+self.addEventListener('activate', function(event) {
+
+  var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+```
 1. 默认情况下 首次注册service worker并安装成功之后到达activate状态 并不会控制当前的页面
 2. 如果你想改变这个默认行为，在激活后使用：clients.claim() 
 
