@@ -52,7 +52,7 @@ if ('serviceWorker' in navigator) {
 
 **非本域名下的资源：**
 
-![](./screenshot/install.gif)
+![img](./screenshot/install.gif)
 
 
 
