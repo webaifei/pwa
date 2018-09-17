@@ -23,13 +23,13 @@
 
 ### web永远绕不开的宿命：兼容性。
 
-1. manifest 
+1. manifest   
    ![](/screenshot/web-app-manifets.png)
 
-2. service worker
+2. service worker  
    ![](/screenshot/service-worker.png)
 
-3. push api
+3. push api  
    ![](/screenshot/push-api.png)
 
 ### 现实不理想，但是不能阻止我们探索^^。
@@ -39,10 +39,10 @@
 定义你自己的manifest
 
 ```
-{
 
-}
 ```
+
+### 
 
 ### How to update your caches?
 
