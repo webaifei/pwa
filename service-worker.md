@@ -17,9 +17,28 @@
 1. 本地localhost 或者是 127.0.0.1 是不没有https限制的
 2. 想要验证线上环境的话 可以使用github 的 gitpages
 
+## service worker声明周期
+
+### install
+
+在注册了service worker脚本之后 
+
+```
+if ('serviceWorker' in navigator) {
+  // 在load事件之后开始注册 防止首次加载 影响首屏时间
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+```
 
 
-## service worker
 
 
 
