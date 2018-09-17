@@ -19,6 +19,8 @@
 
 ## service worker声明周期
 
+  ![img](./screenshot/install.gif)
+
 ### install 安装服务线程
 
 
@@ -76,16 +78,18 @@ self.addEventListener('install', function(event) {
 });
 ```
 
-![img](./screenshot/install.gif)
+
 
 
 
 ### Activate 准备控制客户端
 ```
+// 监听激活事件
 self.addEventListener('activate', function(event) {
 
   var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
-
+  // clients.claim() 
+  // 清除缓存
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
