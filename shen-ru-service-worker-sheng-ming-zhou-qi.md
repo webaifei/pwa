@@ -2,11 +2,16 @@
 
 ![](/screenshot/life-circle.gif)
 
-
-
 install-&gt; wating-&gt;activate
 
 
+
+#### 第一次
+
+1. 针对每一个工作线程 install事件只执行一次。每一个工作线程是由浏览器当前tab管理的（现代浏览器中基本上每一个tab都是一个独立的进程）。
+2. 一般在install中 添加我们的缓存
+
+#### 更新
 
 **注意点：**
 
