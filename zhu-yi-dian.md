@@ -48,14 +48,24 @@
     );   
    ```
 6. **fetch 默认不包含cookie等凭据**
-```
-fetch(url, {
-credentials: 'include'
-})
-```   
-7. ** 非 CORS 默认失败 **
+    你可以通过添加 credentials: 'include'来修改这一个默认行为
+    ```
+        fetch(url, {
+            credentials: 'include'
+        })
+    ```
 
-默认情况下，从不支持 CORS 的第三方网址中获取资源将会失败。 您可以向请求中添加 no-CORS 选项来克服此问题，不过这可能会导致“不透明”的响应，这意味着您无法辨别响应是否成功
+7. **非 CORS 默认失败**
 
-
+    默认情况下，从不支持 CORS 的第三方网址中获取资源将会失败。 您可以向请求中添加 no-CORS 选项来克服此问题，不过这可能会导致“不透明”的响应，这意味着你无法确认是否真的请求成功
+    ```
+    cache.addAll(urlsToPrefetch.map(function(urlToPrefetch) {
+        return new Request(urlToPrefetch, { mode: 'no-cors' });
+    })).then(function() {
+        console.log('All resources have been fetched and cached.');
+    });
+    ```
+    关于CORS TIPS: 
+    - [CORS 阮一峰](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+    - [MDN 规范](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 
