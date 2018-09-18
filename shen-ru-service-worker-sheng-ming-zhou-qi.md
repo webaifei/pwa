@@ -29,6 +29,7 @@ install-&gt; wating-&gt;activate
 2. 导航到其他的页面，并且触发了 navigation request（前端路由 h5 history模式并不会发起请求）
 3. 更新push或者sync事件 （由于push api的兼容性和交互设计，变得很鸡肋 不做讨论）
 4. 调用register 注册的线程脚本地址发生了改变
+5. 每隔24小时 自动检测更新
 
 > 1 、2、4 其实属于同一类 都是需要重新请求注册线程的页面
 
