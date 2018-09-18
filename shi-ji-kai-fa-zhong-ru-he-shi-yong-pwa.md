@@ -11,6 +11,7 @@
 ### 使用WorkBox
 
 1. webpack 项目使用对应的插件 [workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
-2. 
+2. vue项目如果是使用vue-cli 3以上构建 可以使用内置的插件 当然也可以使用上面的插件
+
 
 
