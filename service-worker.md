@@ -49,8 +49,6 @@ if ('serviceWorker' in navigator) {
 
 如果我们注册的是 /example/sw.js 那么我们只能拦截到 /example/开头的请求
 
-
-
 #### 2. 监听install事件 安装成功之后缓存资源到本地
 
 ```
