@@ -2,6 +2,8 @@
 
 使H5 更接近原生APP.
 
+![](/screenshot/PWA.png)
+
 ---
 
 RESOURCES:  
