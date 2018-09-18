@@ -28,6 +28,7 @@ install-&gt; wating-&gt;activate
 1. 刷新页面
 2. 导航到其他的页面，并且触发了 navigation request（前端路由 h5 history模式并不会发起请求）
 3. 更新push或者sync事件
+4. 
 
 
 **注意点：**
