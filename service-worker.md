@@ -38,6 +38,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 ```
+#### 2. 监听install事件 安装成功之后缓存资源到本地
 
 ```
 // 缓存版本
