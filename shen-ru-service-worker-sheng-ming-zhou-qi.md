@@ -49,6 +49,10 @@ install-&gt; wating-&gt;activate
 
 默认情况下，大多数浏览器都会忽略工作线程脚本的缓存头设置（Cache-Control 等），但是最好将其缓存设置为不缓存。
 
+**过程**
+
+1. 更新的工作线程和之前的线程
+
 **注意点：**
 
 注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
