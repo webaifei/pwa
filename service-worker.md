@@ -18,7 +18,7 @@
 1. 本地localhost 或者是 127.0.0.1 是不没有https限制的
 2. 想要验证线上环境的话 可以使用github 的 gitpages
 
-## service worker使用
+## service worker使用过程
 
 #### 1. 注册服务线程
 
@@ -38,8 +38,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 ```
-
-
 
 ```
 // 缓存版本
