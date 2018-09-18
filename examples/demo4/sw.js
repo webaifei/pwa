@@ -1,9 +1,11 @@
+const cacheVersion = 'static-v2';
+const lastCacheVersion = 'static-v3';
 self.addEventListener('install', event => {
     console.log('V1 installing…');
     self.skipWaiting();
     // cache a cat SVG
     event.waitUntil(
-        caches.open('static-v1').then(cache => cache.addAll(['./img/logo-48x48.png', './img/logo-192x192.png']))
+        caches.open(cacheVersion).then(cache => cache.addAll(['./img/logo-48x48.png', './img/logo-192x192.png']))
     );
 });
 // 默认第一次激活sw之后 不会掌控客户端 即不会拦截客户端的请求 出发fetch事件
@@ -13,6 +15,12 @@ self.addEventListener('activate', event => {
     // 2. 首次激活的时候 资源未必在cache中
     // clients.claim();
     console.log('V1 now ready to handle fetches!');
+    event.waitUntil(caches.keys().then(cacheNames => Promise.all(cacheNames.map((cacheName) => {
+        console.log(cacheName, 'cachename');
+        if (cacheName === lastCacheVersion) {
+            return caches.delete(cacheName);
+        }
+    }))));
 });
 
 self.addEventListener('fetch', event => {
@@ -22,7 +30,7 @@ self.addEventListener('fetch', event => {
     // same-origin and the path is '/dog.svg'
     console.log(url, 'url');
     if (url.origin == location.origin && url.pathname == '/img/logo-192x192.png') {
-        event.respondWith(caches.match('/img/logo-48x48.png'));
-        // event.respondWith(caches.match('/img/logo-192x192.png'));
+        // event.respondWith(caches.match('/img/logo-48x48.png'));
+        event.respondWith(caches.match('/img/logo-192x192.png'));
     }
 });
