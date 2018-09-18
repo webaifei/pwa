@@ -22,8 +22,6 @@
 
 #### 1. 注册服务线程
 
-> 在注册service woker成功之后 会启动 服务线程的安装
-
 在注册了service worker脚本之后
 
 ```
