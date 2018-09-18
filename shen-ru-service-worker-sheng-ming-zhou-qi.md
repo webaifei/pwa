@@ -53,17 +53,7 @@ install-&gt; wating-&gt;activate
 
 1. 更新的工作线程和之前的线程一起工作，并且启动安装，触发自己的install事件。
 2. 如果新服务线程失败（注册，安装），就舍弃，当前线程继续活跃。
-3. 安装成功之后，进入wait状态，直到当前活跃的线程不再掌控客户端（即使只打开了一个客户端，刷新的时候客户端会重叠）或者调用self.skipWaiting()
+3. 安装成功之后，进入wait状态，直到当前活跃的线程不再掌控客户端（即使只打开了一个客户端，刷新的时候客户端会重叠）或者调用self.skipWaiting\(\)
 
-**注意点：**
 
-注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
-
-上面的示例代码中是根目录， 所以当前我们的service worker能够拦截到根域名下所有的请求：
-
-/js/index.js , /assets/css/all.css , /assets/images/logo.png。
-
-如果我们注册的是 /example/sw.js 那么我们只能拦截到 /example/开头的请求
-
-**非本域名下的资源：**
 
