@@ -18,4 +18,20 @@
 2. **不要给工作线程脚本设置缓存**
    虽然大多数的浏览器都会忽略工作线程脚本的缓存设置，但是以防不测，还是不要设置缓存
    
-3. 
+3. 为了首次加载的性能，请将工作线程的注册 放到load事件中
+   ```
+  if ('serviceWorker' in navigator) {
+    // 在load事件之后开始注册 防止首次加载 影响首屏时间
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+  ```
+  
+  
