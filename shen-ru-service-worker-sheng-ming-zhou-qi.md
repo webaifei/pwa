@@ -1,8 +1,5 @@
 # Service Worker生命周期
 
-![](/screenshot/life-circle.gif)
-
-
 
 
 
