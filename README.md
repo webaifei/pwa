@@ -2,9 +2,7 @@
 
 使H5 更接近原生APP.
 
-
-
-
+---
 
 RESOURCES:  
 1. [谷歌开发者文档](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)  
