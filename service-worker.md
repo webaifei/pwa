@@ -17,9 +17,7 @@
 1. 本地localhost 或者是 127.0.0.1 是不没有https限制的
 2. 想要验证线上环境的话 可以使用github 的 gitpages
 
-## service worker声明周期
-
-![img](./screenshot/install.gif)
+## service worker使用
 
 ### install 安装服务线程
 
@@ -101,8 +99,6 @@ self.addEventListener('activate', function(event) {
 
 1. 默认情况下 首次注册service worker并安装成功之后到达activate状态 并不会控制当前的页面
 2. 如果你想改变这个默认行为，在激活后使用：clients.claim\(\) 
-
-
 
 ## 拦截请求使用本地缓存
 
