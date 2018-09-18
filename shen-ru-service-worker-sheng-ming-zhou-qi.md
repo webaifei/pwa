@@ -2,6 +2,12 @@
 
 ![](/screenshot/life-circle.gif)
 
+
+
+install-&gt; wating-&gt;activate
+
+
+
 **注意点：**
 
 注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
