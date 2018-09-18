@@ -23,7 +23,7 @@
 
 ### web永远绕不开的宿命：兼容性。
 
-1. manifest   
+1. manifest  
    ![](/screenshot/web-app-manifets.png)
 
 2. service worker  
@@ -44,15 +44,6 @@
 
 ### 
 
-### How to update your caches?
-
-1. 默认情况下，
-
-### Local develop enviroment
-
-1. localhost or 127.0.0.1
-2. github
-
 ### Tips
 
 1. fetch 默认不包含cookie等凭据
@@ -67,9 +58,5 @@
    ```
 3. 添加缓存的资源列表，如果其中一个添加失败会导致整个缓存添加失败。
 
-RESOURCES:  
-1. [谷歌开发者文档](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)  
-2. [pwa webpack plugin](https://github.com/NekR/offline-plugin/blob/HEAD/docs/options.md)  
-3. [google workbox tool](https://developers.google.com/web/tools/workbox/)  
-4. [workbox-webpack-plugin](https://www.npmjs.com/package/workbox-webpack-plugin)
+
 
