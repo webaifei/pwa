@@ -22,6 +22,8 @@
 
 #### 1. 注册服务线程
 
+> 在注册service woker成功之后 会启动 服务线程的安装
+
 在注册了service worker脚本之后
 
 ```
@@ -50,6 +52,8 @@ if ('serviceWorker' in navigator) {
 如果我们注册的是 /example/sw.js 那么我们只能拦截到 /example/开头的请求
 
 **非本域名下的资源：**
+
+
 
 ```
 // 缓存版本
