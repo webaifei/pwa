@@ -10,7 +10,9 @@
 
 ### 使用WorkBox
 
-
+1. webpack 项目使用对应的插件[workbox-webpack-plugin
+](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin
+)
 
 
 
