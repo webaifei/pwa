@@ -3,7 +3,10 @@ self.addEventListener('install', event => {
 
     // cache a cat SVG
     event.waitUntil(
-        caches.open('static-v1').then(cache => cache.add('./img/logo-48x48.png'))
+        caches.open('static-v1').then(cache => 
+            cache.addAll(['./img/logo-48x48.png', "./img/logo-96x96.png"])
+            
+        )
     );
 });
 
@@ -18,6 +21,6 @@ self.addEventListener('fetch', event => {
     // same-origin and the path is '/dog.svg'
     console.log(url, 'url');
     if (url.origin == location.origin && url.pathname == '/img/logo-192x192.png') {
-        event.respondWith(caches.match('/img/logo-48x48.png'));
+        event.respondWith(caches.match('/img/logo-96x96.png'));
     }
 });
