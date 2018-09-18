@@ -39,6 +39,18 @@ if ('serviceWorker' in navigator) {
 }
 ```
 
+**注意点：**
+
+注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
+
+上面的示例代码中是根目录， 所以当前我们的service worker能够拦截到根域名下所有的请求：
+
+/js/index.js , /assets/css/all.css , /assets/images/logo.png。
+
+如果我们注册的是 /example/sw.js 那么我们只能拦截到 /example/开头的请求
+
+
+
 #### 2. 监听install事件 安装成功之后缓存资源到本地
 
 ```
@@ -132,8 +144,6 @@ self.addEventListener('activate', function(event) {
 
 1. 默认情况下 首次注册service worker并安装成功之后到达activate状态 并不会控制当前的页面
 2. 如果你想改变这个默认行为，在激活后使用：clients.claim\(\) 
-
-
 
 
 
