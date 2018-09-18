@@ -25,7 +25,10 @@ install-&gt; wating-&gt;activate
 
 当出现以下情况时候 会触发线程的更新机制
 
-1. 
+1. 刷新页面
+2. 导航到其他的页面，并且触发了 navigation request（前端路由 h5 history模式并不会发起请求）
+
+
 **注意点：**
 
 注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
