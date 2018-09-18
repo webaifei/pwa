@@ -24,8 +24,6 @@
 
 > 在注册service woker成功之后 会启动 服务线程的安装
 
-在注册了service worker脚本之后
-
 ```
 if ('serviceWorker' in navigator) {
   // 在load事件之后开始注册 防止首次加载 影响首屏时间
@@ -40,18 +38,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 ```
-
-**注意点：**
-
-注册的service worker脚本 sw.js 所在路径决定了 service worker的控制范围（作用域）；
-
-上面的示例代码中是根目录， 所以当前我们的service worker能够拦截到根域名下所有的请求：
-
-/js/index.js , /assets/css/all.css , /assets/images/logo.png。
-
-如果我们注册的是 /example/sw.js 那么我们只能拦截到 /example/开头的请求
-
-**非本域名下的资源：**
 
 
 
