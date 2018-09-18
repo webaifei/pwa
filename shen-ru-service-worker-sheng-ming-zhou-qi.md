@@ -30,6 +30,8 @@ install-&gt; wating-&gt;activate
 3. 更新push或者sync事件 （由于push api的兼容性和交互设计，变得很鸡肋 不做讨论）
 4. 调用register 注册的线程脚本地址发生了改变
 
+> 1 、2、4 其实属于同一类 都是需要重新请求注册线程的页面
+
 
 **注意点：**
 
