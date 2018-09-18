@@ -16,7 +16,7 @@
 主要是https环境的问题，
 
 1. 本地localhost 或者是 127.0.0.1 是不没有https限制的
-2. 想要验证线上环境的话 可以使用github 的 gitpages
+2. 想要验证线上环境的话 可以使用github 的 github-pages
 
 ## service worker使用过程
 
