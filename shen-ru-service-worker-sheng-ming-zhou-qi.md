@@ -8,6 +8,8 @@ install-&gt; wating-&gt;activate
 
 #### 第一次
 
+![](/screenshot/first-life-circle.png)
+
 安装完成
 
 1. 针对每一个工作线程 install事件只执行一次。每一个工作线程是由浏览器当前tab管理的（现代浏览器中基本上每一个tab都是一个独立的进程）。
@@ -44,10 +46,6 @@ install-&gt; wating-&gt;activate
 > 因为更新服务线程脚本是更新本地缓存的正确唯一途径，所以服务线程脚本本身的更新策略 非常重要。
 
 默认情况下，大多数浏览器都会忽略工作线程脚本的缓存头设置（Cache-Control 等），但是最好将其缓存设置为不缓存。
-
-
-
-
 
 **注意点：**
 
