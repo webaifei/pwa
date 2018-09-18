@@ -20,7 +20,7 @@
 
 ## service worker使用
 
-### install 安装服务线程
+#### 1. 注册服务线程
 
 > 在注册service woker成功之后 会启动 服务线程的安装
 
