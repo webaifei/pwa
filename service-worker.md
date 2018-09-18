@@ -38,6 +38,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 ```
+
 #### 2. 监听install事件 安装成功之后缓存资源到本地
 
 ```
@@ -61,7 +62,8 @@ self.addEventListener('install', function(event) {
   );
 });
 ```
-#### 拦截请求，使用本地缓存响应。
+
+#### 3. 拦截请求，使用本地缓存响应。
 
 ```
 self.addEventListener('fetch', function(event) {
@@ -104,7 +106,8 @@ self.addEventListener('fetch', function(event) {
     );
 });
 ```
-#### Activate 准备控制客户端
+
+#### 4. 监听activate事件 更新缓存
 
 ```
 // 监听激活事件
@@ -131,7 +134,6 @@ self.addEventListener('activate', function(event) {
 2. 如果你想改变这个默认行为，在激活后使用：clients.claim\(\) 
 
 ## 拦截请求使用本地缓存
-
 
 
 
