@@ -61,8 +61,10 @@ self.addEventListener('install', function(event) {
   );
 });
 ```
+#### 拦截请求，使用本地缓存响应。
 
-### Activate 准备控制客户端
+
+#### Activate 准备控制客户端
 
 ```
 // 监听激活事件
