@@ -4,6 +4,7 @@ import Vant from 'vant';
 import 'vant/lib/vant-css/index.css';
 import App from './App.vue';
 import router from './router';
+import './registerServiceWorker';
 
 Vue.use(Vant);
 
