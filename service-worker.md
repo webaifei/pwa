@@ -5,6 +5,8 @@
 1. js引擎是单线程的，service worker 是独立的一个线程， 并且无法访问DOM.
 2. 注册安装成功之后，可以拦截请求，从而决定是否使用本地缓存进行相应，具有代理的功能。
 
+![](/screenshot/service-worker-cache.jpeg)
+
 ## 使用service worker的前置条件
 
 1. 浏览器支持 service worker ， Promise， fetch，caches等
