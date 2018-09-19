@@ -2,8 +2,6 @@
 
 ![](/screenshot/lifecycle.png)
 
-install-&gt; wating-&gt;activate
-
 ---
 
 #### 第一次
