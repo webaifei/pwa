@@ -1,6 +1,6 @@
 # Service Worker生命周期
 
-![](/screenshot/life-circle.gif)
+![](/screenshot/lifecycle.png)
 
 install-&gt; wating-&gt;activate
 
