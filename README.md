@@ -6,6 +6,10 @@
 
 ---
 
+**先看效果：**
+
+https://webaifei.github.io/pwa-online-show/
+
 RESOURCES:  
 1. [谷歌开发者文档](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)  
 2. [pwa webpack plugin](https://github.com/NekR/offline-plugin/blob/HEAD/docs/options.md)  
