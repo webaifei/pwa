@@ -30,7 +30,7 @@
 if ('serviceWorker' in navigator) {
   // 在load事件之后开始注册 防止首次加载 影响首屏时间
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch(function(err) {
